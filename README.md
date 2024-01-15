@@ -11,3 +11,6 @@ Cloning Netflix using HTML, CSS, and Bootstrap
 - Please create a feature branch starting with `feature/xxxxxxx` to work on your task
 - Please create a pull request to `develop` branch with your working feature branch for review
 - Please merge after a pull request is approved by at least one reviewer
+
+# Coding Conventions
+- Please see the coding convention document [here](/docs/conventions.md)
