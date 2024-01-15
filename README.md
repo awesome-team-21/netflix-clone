@@ -7,7 +7,7 @@ Cloning Netflix using HTML, CSS, and Bootstrap
 - Members: [석현](https://github.com/tktjrgus12), [하람](https://github.com/kharam1436)
 
 # How to contribute
-- Please clone the repository with `develop` branch ('git clone origin https://github.com/awesome-team-21/netflix-clone.git`)
+- Please clone the repository with `develop` branch (`git clone origin https://github.com/awesome-team-21/netflix-clone.git`)
   - If you already cloned the repository, please get the latest version of the branch (`git pull origin develop`)
 - Please create a feature branch starting with `feature/xxxxxxx` to work on your task (`git checkout -b feature/initial-commit`)
 - Please create a pull request to `develop` branch with your working feature branch for review
