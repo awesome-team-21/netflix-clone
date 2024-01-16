@@ -20,14 +20,17 @@ Cloning Netflix using HTML, CSS, and Bootstrap
 - The landing page will be `index.html`(the default html) in the root folder
 - The other pages will be in each related folder
 - Structure
-root
-  ├── index.html            # landing page
-  ├── global.css
-  ├── style.css
-  ├── movie
-  |    ├── index.html       # movie main page
-  |    ├── detail.html      # movie detail page
-  |    ├── style.css 
-  ├── login
-  |   ├── index.html        # login page
-  |   ├── style.css
+
+```
+  root
+    ├── index.html             # landing page
+    ├── global.css
+    ├── style.css
+    ├── movie
+    |     ├── index.html       # movie main page
+    |     ├── detail.html      # movie detail page
+    |     └── style.css 
+    ├── login
+    |     ├── index.html       # login page
+    └──   └── style.css
+```
