@@ -13,7 +13,7 @@ Cloning Netflix using HTML, CSS, and Bootstrap
 - Please create a pull request to `develop` branch with your working feature branch for review
 - Please merge after a pull request is approved by at least one reviewer
   
-### Contribute Order (Assume you alreday cloned the repsitory)
+### Contribute Order (Assume you already have a clone repository on your local)
 - Please follow the steps on your local repository(your local computer) before you start to work your task:
 1. `git pull origin develop` in `develop` branch (You can switch to `develop` branch with `git checkout develop` if you are not in `develop` branch)
 2. Switch to your feature branch using `git checkout feature/xxxxxx` and then merge develop branch to your feature branch using `git merge develop`
