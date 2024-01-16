@@ -2,9 +2,9 @@
 Cloning Netflix using HTML, CSS, and Bootstrap
 
 # Contributors
-- Product Owner: 근선
-- Scrum Master: [상석](https://github.com/ldss3sang)
-- Members: [석현](https://github.com/tktjrgus12), [하람](https://github.com/kharam1436)
+- Product Owner: [김근선](https://github.com/geunseonkim)
+- Scrum Master: [도상석](https://github.com/ldss3sang)
+- Members: [사석현](https://github.com/tktjrgus12), [권하람](https://github.com/kharam1436)
 
 # How to contribute
 - Please clone the repository with `develop` branch (`git clone https://github.com/awesome-team-21/netflix-clone.git`)
