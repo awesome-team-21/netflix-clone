@@ -25,7 +25,9 @@ Cloning Netflix using HTML, CSS, and Bootstrap
 # Coding Conventions
 - Use prettier https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 - The words in `class` name in CSS should be separated with `-`(hyphen). EX) `nav-item`
-- (Optional) I recommend to use [BEM](https://getbem.com/) for class name.
+- Optional Convention (However, I recommend to follow them)
+  - use [BEM](https://getbem.com/) for class name
+  - use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for git commit message
 
 # Project file/folder structure
 - The landing page will be `index.html`(the default html) in the root folder
