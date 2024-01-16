@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+#intro {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/1abd43b5-b8a4-47ae-9e04-4ea437fef33e/US-en-20240107-trifectadaily-perspective_alpha_website_small.jpg");
+  height: 80vh;
+}
+
+.mask {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.container-fluid {
+  width: 1170px;
+}
+
+.navbar--login {
+  width: 12rem;
+}
+
+.div--detail-card {
+  width: 100%;
+  height: 300px;
+  background: #000;
+  align-items: center;
+}
