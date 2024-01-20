@@ -7,12 +7,17 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--bs-body-font-family);
   color: var(--bs-body-color);
 }
 .btn-primary {
   background-color: var(--red);
+  border: 0;
 }
 
 .btn-primary:hover {
