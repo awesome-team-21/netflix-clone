@@ -16,12 +16,6 @@
   <body data-bs-theme="dark">
     <nav class="navbar navbar-expand sticky-top mask">
       <div class="container">
-
-
-
-
-
-
         <a href="#" class="navbar-brand">Netflix</a>
         <ul class="navbar-nav">
           <li class="navbar-item">
@@ -77,26 +71,52 @@
 
     <div class="container">
       <div class="row div--detail-card">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h1>Enjoy on your TV.</h1>
           <h2>
             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
             players, and more.
           </h2>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 position-relative">
           <img
+            class="img-video-foreground"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
             alt=""
           />
+          <video
+            class="video-flow-example"
+            autoplay=""
+            playsinline=""
+            muted=""
+            loop=""
+          >
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
         </div>
 
         <div class="row div--detail-card">
-          <div class="col">
+          <div class="col position-relative">
             <img
+              class="img-video-foreground"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
               alt=""
             />
+            <video
+              class="video-play-mac"
+              autoplay=""
+              playsinline=""
+              muted=""
+              loop=""
+            >
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div class="col">
             <h1>Download your shows to watch offline.</h1>
