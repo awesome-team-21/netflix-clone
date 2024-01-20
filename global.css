@@ -1,6 +1,8 @@
 :root {
   --red: #ff1f1f;
   --red-hover: #e50914;
+  --red-active: #9f060f;
+  --bs-body-color: black;
 
   --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
@@ -22,4 +24,8 @@ body {
 
 .btn-primary:hover {
   background-color: var(--red-hover);
+}
+
+.btn-primary:active {
+
 }
