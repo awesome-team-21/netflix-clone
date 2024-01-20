@@ -1,5 +1,0 @@
-# do not upload all hidden files
-.*
-
-# always upload gitignore
-!.gitignore
