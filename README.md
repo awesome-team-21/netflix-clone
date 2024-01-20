@@ -56,5 +56,8 @@ Cloning Netflix using HTML, CSS, and Bootstrap
     |     └── style.css
     ├── login
     |     ├── index.html       # login page
+    |     └── style.css
+    ├── account
+    |     ├── index.html       # account page
     └──   └── style.css
 ```
