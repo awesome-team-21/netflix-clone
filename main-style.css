@@ -358,6 +358,21 @@ body {
     z-index: 1; /* Higher z-index for frontimage */
   }
   
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
   .title {
     position: absolute;
     top: 50px;
@@ -367,6 +382,7 @@ body {
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    z-index: 0; /* Lower z-index for title */
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value (0.7) for opacity */
+    padding: 15px;
   }
-  
