@@ -35,4 +35,5 @@ window.addEventListener("load", () => {
 
   const email = searchParams.get("email");
   usernameField.value = email;
+  labelElementFocusOut(emailField, emailLabel);
 });
