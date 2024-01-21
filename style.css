@@ -11,6 +11,11 @@ body {
   background: var(--main-background-color);
 }
 
+section,
+footer {
+  margin-bottom: 1rem;
+}
+
 a {
   text-decoration: underline;
   color: inherit;
