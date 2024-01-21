@@ -9,7 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <meta http-equiv="refresh" content="30; url = ../index.html" />
+    <!-- <meta http-equiv="refresh" content="30; url = ../index.html" /> -->
     <link rel="stylesheet" href="../global.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Netflix Clone</title>
@@ -19,7 +19,9 @@
       <div class="logout-wrapper">
         <div class="logout-wrapper-background"></div>
         <!-- end login-wrapper-background -->
-        <div class="logout-header">
+        <div
+          class="logout-header d-flex align-items-center justify-content-between"
+        >
           <a class="logo" href="../index.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +36,13 @@
               />
             </svg>
           </a>
+          <a class="btn btn-primary sign-in" href="../login/index.html"
+            >Sign In</a
+          >
         </div>
         <!-- end login-header -->
         <div class="logout-body">
-          <div class="logout-content py-1 py-md-5 px-5">
+          <div class="logout-content py-1 pt-md-5 px-5">
             <h1 class="mb-4">Leaving So Soon?</h1>
             <p>
               Just so you know, you don't always need to sign out of Netflix.
@@ -46,7 +51,12 @@
             <p class="pb-2">
               You'll be redirected to Netflix.com in 30 seconds.
             </p>
-            <button class="btn btn-primary">Go Now</button>
+            <a
+              id="go-now"
+              class="btn btn-primary py-2"
+              href="../login/index.html"
+              >Go Now</a
+            >
           </div>
           <!-- end login-content -->
         </div>

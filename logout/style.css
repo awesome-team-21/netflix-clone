@@ -12,6 +12,21 @@
   z-index: 0;
 }
 
+#go-now {
+  display: block;
+  border-radius: 0;
+  background-color: #0071eb;
+  text-align: center;
+}
+
+#go-now:hover {
+  background-color: #288bf5;
+}
+
+#go-now:active {
+  background-color: #035bb8 !important;
+}
+
 .logout-wrapper-background {
   display: none;
 }
@@ -19,7 +34,12 @@
 .logo {
   margin-left: 3%;
   display: inline-block;
-  line-height: 90px;
+  line-height: 5.6rem;
+}
+
+.sign-in {
+  margin-right: 3%;
+  line-height: 1.5rem;
 }
 
 .logo-svg {
@@ -307,8 +327,7 @@
   }
 
   .logout-content {
-    margin-bottom: 90px;
-    min-height: 625px;
+    min-height: 350px;
     padding: 60px 68px 40px;
   }
 
