@@ -7,7 +7,7 @@ body {
 
 .slider1 {
   position: absolute;
-  top: 600px;
+  top: 38rem;
   margin-left: 20px;
   z-index: 200;
   font-size: 19px;
@@ -15,7 +15,7 @@ body {
 
 .slider2 {
   position: absolute;
-  top: 810px;
+  top: 51rem;
   margin-left: 20px;
   font-size: 19px;
 }
@@ -23,7 +23,7 @@ body {
 .slider3 {
   position: absolute;
   z-index: 200;
-  top: 1020px;
+  top: 64rem;
   margin-left: 82px;
   font-size: 19px;
 }
@@ -31,7 +31,7 @@ body {
 .slider4 {
   position: absolute;
   z-index: 150;
-  top: 1280px;
+  top: 81.5rem;
   margin-left: 30px;
   font-size: 19px;
 }
@@ -39,7 +39,7 @@ body {
 .slider5 {
   position: absolute;
   z-index: 100;
-  top: 1490px;
+  top: 94rem;
   margin-left: 30px;
   font-size: 19px;
 }
@@ -47,28 +47,28 @@ body {
 .slider6 {
   position: absolute;
   z-index: 50;
-  top: 1700px;
+  top: 107rem;
   margin-left: 82px;
   font-size: 19px;
 }
 
 .slider7 {
   position: absolute;
-  top: 1960px;
+  top: 124rem;
   margin-left: 20px;
   font-size: 19px;
 }
 
 .slider8 {
   position: absolute;
-  top: 2170px;
+  top: 137rem;
   margin-left: 20px;
   font-size: 19px;
 }
 
 .slider9 {
   position: absolute;
-  top: 2380px;
+  top: 150rem;
   margin-left: 20px;
   font-size: 19px;
 }
@@ -298,7 +298,7 @@ body {
   color: #141414;
   -webkit-text-stroke: 4px rgb(89, 89, 89);
   font-weight: bolder;
-  font-size: 237px;
+  font-size: 15rem;
   line-height: 1;
   position: absolute;
   left: -43px;
@@ -315,5 +315,81 @@ body {
 }
 
 .top-number-item-size {
-  width: 124px;
+  width: 8rem;
+}
+
+@media screen and (max-width: 38rem) {
+  .top-number-item div {
+    font-size: 6rem;
+    top: 5px;
+    margin-left: 20px;
+  }
+  .top-number-item-size {
+    margin-left: 50px;
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .top-number-item div {
+    font-size: 5rem;
+    top: 5px;
+    margin-left: 50px;
+  }
+  .top-number-item-size {
+    margin-left: 50px;
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .slider1 {
+    position: absolute;
+    top: 38rem;
+  }
+
+  .slider2 {
+    position: absolute;
+    top: 46rem;
+  }
+
+  .slider3 {
+    position: absolute;
+    top: 54rem;
+  }
+
+  .slider4 {
+    position: absolute;
+    top: 63rem;
+  }
+
+  .slider5 {
+    position: absolute;
+    top: 71rem;
+  }
+
+  .slider6 {
+    position: absolute;
+    top: 79rem;
+  }
+
+  .slider7 {
+    position: absolute;
+    top: 89rem;
+  }
+
+  .slider8 {
+    position: absolute;
+    top: 97rem;
+  }
+
+  .slider9 {
+    position: absolute;
+    top: 105rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .col {
+  }
 }
