@@ -1,20 +1,42 @@
 :root {
-  --red: #ff1f1f;
-  --red-hover: #e50914;
+  --red-button: #ff1f1f;
+  --red-button-hover: #e50914;
+  --red-button-active: #9f060f;
+  --bs-body-color: black;
 
   --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--bs-body-font-family);
   color: var(--bs-body-color);
 }
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: 0 !important;
+  height: 50px;
+  font-weight: 500;
+}
+
 .btn-primary {
-  background-color: var(--red);
+  border: 0;
+  background-color: var(--red-button);
 }
 
 .btn-primary:hover {
-  background-color: var(--red-hover);
+  background-color: var(--red-button-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--red-button-active) !important;
 }

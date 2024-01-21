@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Netflix Clone</title>
+  </head>
+  <body data-bs-theme="dark">
+    <div id="container">
+      <div class="login-wrapper">
+        <div class="login-wrapper-background">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/76738589-55fe-4402-b729-fe5d2b3b16c6/US-en-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+            alt="login-backgroudn"
+          />
+        </div>
+        <!-- end login-wrapper-background -->
+        <div class="login-header">
+          <a class="logo" href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="800"
+              width="1200"
+              viewBox="-153.6 -69.1855 1331.2 415.113"
+              class="logo-svg"
+            >
+              <path
+                fill="#d81f26"
+                d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676L44.051 119.724v151.073C28.647 272.418 14.594 274.58 0 276.742V0h41.08l56.212 157.021V0h43.511zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461V0h119.724v43.241h-76.482zm237.284-58.104h-44.862V242.15c-14.594 0-29.188 0-43.239.539V43.242h-44.862V0H463.22zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433V0h120.808v43.241h-78.375zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676V0h43.24zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242V0h-42.43zM1024 0l-54.863 131.615L1024 276.742c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75L871.576 0h46.482l28.377 72.699L976.705 0z"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- end login-header -->
+        <div class="login-body">
+          <div class="login-content">
+            <h1>Sign in</h1>
+            <form class="login-form" action="../movie/index.html" method="GET">
+              <div class="login-input">
+                <input
+                  id="username"
+                  class="login-username"
+                  placeholder=""
+                  type="text"
+                  required
+                />
+                <label id="username-label" for="username"
+                  >Email or phone number</label
+                >
+              </div>
+              <div class="login-input">
+                <input
+                  id="password"
+                  class="login-password"
+                  type="password"
+                  required
+                />
+                <label id="password-label" for="password">Password</label>
+              </div>
+              <input
+                class="btn btn-primary login-button"
+                type="submit"
+                value="Sign in"
+              />
+              <div class="login-form-other">
+                <div class="login-remember-me">
+                  <input
+                    name="remember-me"
+                    id="remember-me"
+                    type="checkbox"
+                    checked
+                    value="true"
+                  />
+                  <label for="remember-me"><span>Remember me</span></label>
+                </div>
+                <a
+                  class="login-help-link"
+                  target="_self"
+                  href="https://www.netflix.com/LoginHelp"
+                >
+                  Need help?
+                </a>
+              </div>
+            </form>
+            <div class="login-other">
+              <div class="login-signup-now">
+                <span>New to Netflix?</span>
+                <a target="_self" href="../index.html">Sign up now</a>
+              </div>
+              <!-- end login-signup-now -->
+              <div class="terms-of-use">
+                <p>
+                  <span>
+                    This page is protected by Google reCAPTCHA to ensure you're
+                    not a bot.
+                  </span>
+                  &nbsp;
+                  <a
+                    href="#terms-of-use-disclosure"
+                    onclick="this.style.display='none'"
+                  >
+                    Learn more.
+                  </a>
+                </p>
+                <div id="terms-of-use-disclosure">
+                  <span>
+                    The information collected by Google reCAPTCHA is subject to
+                    the Google
+                  </span>
+                  <a
+                    href="https://policies.google.com/privacy"
+                    id="recaptcha-privacy-link"
+                    data-uia="recaptcha-privacy-link"
+                    target="_blank"
+                  >
+                    Privacy Policy
+                  </a>
+                  <span> and </span>
+                  <a
+                    href="https://policies.google.com/terms"
+                    id="recaptcha-tos-link"
+                    data-uia="recaptcha-tos-link"
+                    target="_blank"
+                  >
+                    Terms of Service
+                  </a>
+                  <span>
+                    , and is used for providing, maintaining, and improving the
+                    reCAPTCHA service and for general security purposes (it is
+                    not used for personalized advertising by Google).
+                  </span>
+                </div>
+                <!-- end terms-of-use-disclosure -->
+              </div>
+              <!-- end terms-of-user -->
+            </div>
+            <!-- end login-other -->
+          </div>
+          <!-- end login-content -->
+        </div>
+        <!-- end login-body -->
+        <div class="footer">
+          <div class="footer-divider"></div>
+          <div class="site-footer">
+            <div class="footer-top">
+              <p>
+                Questions? Call
+                <a class="footer-top-phone" href="tel:1-844-505-2003">
+                  1-844-505-2003
+                </a>
+              </p>
+            </div>
+            <!-- end footer-top -->
+            <div class="footer-links">
+              <ul>
+                <li class="footer-link-item">
+                  <a
+                    class="footer-link"
+                    href="https://help.netflix.com/support/412"
+                  >
+                    <span>FAQ</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a class="footer-link" href="https://help.netflix.com">
+                    <span>Help Center</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a class="footer-link" href="https://netflix.shop/">
+                    <span>Netflix Shop</span>
+                  </a>
+                </li>
+                <li
+                  class="footer-link-item"
+                  placeholder="footer_responsive_link_terms_item"
+                >
+                  <a
+                    class="footer-link"
+                    href="https://help.netflix.com/legal/termsofuse"
+                  >
+                    <span>Terms of Use</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a
+                    class="footer-link"
+                    href="https://help.netflix.com/legal/privacy"
+                  >
+                    <span>Privacy</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a class="footer-link" href="#">
+                    <span>Cookie Preferences</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a
+                    class="footer-link"
+                    href="https://help.netflix.com/legal/corpinfo"
+                  >
+                    <span>Corporate Information</span>
+                  </a>
+                </li>
+                <li class="footer-link-item footer-link-do-not-sell-info">
+                  <a class="footer-link" href="https://www.netflix.com/dnsspi">
+                    <span>Do Not Sell or Share My Personal Information</span>
+                  </a>
+                </li>
+                <li class="footer-link-item">
+                  <a
+                    class="footer-link"
+                    href="https://netflix.com/adchoices-us"
+                  >
+                    <span>Ad Choices</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- end footer-links -->
+          </div>
+          <!-- end site-footer -->
+        </div>
+        <!-- end footer -->
+      </div>
+      <!-- end login-wrapper -->
+    </div>
+    <!-- end container -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
