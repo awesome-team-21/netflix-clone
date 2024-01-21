@@ -10,14 +10,12 @@ body {
   top: 38rem;
   margin-left: 20px;
   z-index: 200;
-  font-size: 19px;
 }
 
 .slider2 {
   position: absolute;
   top: 51rem;
   margin-left: 20px;
-  font-size: 19px;
 }
 
 .slider3 {
@@ -25,7 +23,6 @@ body {
   z-index: 200;
   top: 64rem;
   margin-left: 82px;
-  font-size: 19px;
 }
 
 .slider4 {
@@ -33,7 +30,6 @@ body {
   z-index: 150;
   top: 81.5rem;
   margin-left: 30px;
-  font-size: 19px;
 }
 
 .slider5 {
@@ -41,7 +37,6 @@ body {
   z-index: 100;
   top: 94rem;
   margin-left: 30px;
-  font-size: 19px;
 }
 
 .slider6 {
@@ -49,28 +44,24 @@ body {
   z-index: 50;
   top: 107rem;
   margin-left: 82px;
-  font-size: 19px;
 }
 
 .slider7 {
   position: absolute;
   top: 124rem;
   margin-left: 20px;
-  font-size: 19px;
 }
 
 .slider8 {
   position: absolute;
   top: 137rem;
   margin-left: 20px;
-  font-size: 19px;
 }
 
 .slider9 {
   position: absolute;
   top: 150rem;
   margin-left: 20px;
-  font-size: 19px;
 }
 
 .slide-top-text-size {
@@ -80,6 +71,7 @@ body {
 .title {
   text-decoration: none;
   color: #e5e5e5;
+  font-size: 19px;
 }
 
 .title-resize {
@@ -321,6 +313,17 @@ body {
 }
 
 @media screen and (max-width: 28rem) {
+  .bi {
+    font-size: 15px;
+  }
+
+  .card-text {
+    font-size: 7px;
+  }
+
+  .width-icon {
+    width: 1rem;
+  }
   .top-number-item div {
     font-size: 9rem;
     top: -10px;
@@ -340,7 +343,7 @@ body {
   .control-prev-again {
     margin-left: 100px;
     position: absolute;
-    bottom: -165px;
+    bottom: -135px;
   }
 
   .control-next-again {
@@ -353,7 +356,17 @@ body {
   .carousel-control-prev-icon {
     padding: 70px 40px;
     margin: 30px -30px;
-    margin-left: -120px;
+    margin-left: -90px;
+    position: absolute;
+    bottom: -140px;
+    background-color: black;
+    opacity: 0.4;
+  }
+
+  .carousel-control-next-icon {
+    padding: 70px 40px;
+    margin: 50px 0px;
+    margin-right: -85px;
     position: absolute;
     bottom: -160px;
     background-color: black;
@@ -363,9 +376,19 @@ body {
 
 @media screen and (max-width: 28rem) {
   .carousel-control-prev-icon3 {
-    padding: 70px 35px;
-    margin: 30px 20px;
-    margin-left: 60px;
+    padding: 70px 40px;
+    margin: 30px -30px;
+    margin-left: -210px;
+    position: absolute;
+    bottom: -165px;
+  }
+
+  .control-next-again {
+    margin-left: -120px;
+    position: absolute;
+    top: -65px;
+    padding: 70px 40px;
+    /*border: 1px solid red;*/
   }
 }
 
@@ -383,27 +406,17 @@ body {
   .half-way {
     display: block;
   }
-
-  .card-text {
-    font-size: 11px;
-  }
 }
 
 @media screen and (min-width: 50rem) {
   .half-way-four {
     display: block;
   }
-  .card-text {
-    font-size: 11px;
-  }
 }
 
 @media screen and (min-width: 80px) {
   .half-way-five {
     display: block;
-  }
-  .card-text {
-    font-size: 11px;
   }
 }
 
