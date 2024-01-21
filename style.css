@@ -11,6 +11,10 @@ body {
   background: var(--main-background-color);
 }
 
+img {
+  max-width: 100%;
+}
+
 section,
 footer {
   margin-bottom: 1rem;
