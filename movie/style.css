@@ -352,6 +352,10 @@ a {
   width: 8rem;
 }
 
+.social-network {
+  padding-left: 0;
+}
+
 @media screen and (max-width: 28rem) {
   .bi {
     font-size: 15px;
