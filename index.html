@@ -11,12 +11,15 @@
     />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Netflix Clone</title>
   </head>
   <body data-bs-theme="dark">
     <nav class="navbar navbar-expand sticky-top mask">
       <div class="container">
-        <a href="#" class="navbar-brand">Netflix</a>
+        <a href="#" class="navbar-brand"
+          ><img src="./assets/logo.png" alt="Netflix logo"
+        /></a>
         <ul class="navbar-nav">
           <li class="navbar-item">
             <div class="nav-item dropdown">
@@ -40,57 +43,89 @@
         </ul>
       </div>
     </nav>
-    <header>
+    <div>
       <div id="intro" class="bg-image shadow-2-strong">
         <div class="mask d-flex align-items-center h-100">
-          <div class="container justify-content-md-center">
+          <div class="container justify-content-md-center text-center">
             <div class="row">
-              <div class="col col-12 justify-content-center">
+              <div class="col-12 text-center">
                 <h1 class="fw-bold">Unlimited movies, TV shows, and more.</h1>
                 <h2>Watch anywhere. Cancel anytime.</h2>
               </div>
             </div>
-            <div class="row justify-content-md-center">
+            <div
+              class="d-flex flex-column flex-md-row col-8 mx-auto email-input-form h-25"
+            >
               <input
-                class="col form-control"
+                id="landing-email-address-field"
+                class="form-control transparent-input-field"
                 type="email"
                 placeholder="Email Address"
                 aria-label="Email Address"
               />
               <button
-                class="col-12 col-md-2 col-xm-4 btn btn-primary"
+                id="email-submit-button"
+                class="btn btn-primary mx-auto mx-md-2 px-3 mt-2 mt-md-0"
                 type="submit"
               >
-                Get Started
+                Get Started >
               </button>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <div class="container">
       <div class="row div--detail-card">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h1>Enjoy on your TV.</h1>
           <h2>
             Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
             players, and more.
           </h2>
         </div>
-        <div class="col-6">
+        <section class="col-12 col-md-6 position-relative">
           <img
+            class="img-video-foreground"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
             alt=""
           />
-        </div>
+          <video
+            class="video-flow-example"
+            autoplay=""
+            playsinline=""
+            muted=""
+            loop=""
+          >
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </section>
 
-        <div class="row div--detail-card">
-          <div class="col">
+        <section
+          class="d-flex flex-column-reverse flex-md-row flex-md-wrap-reverse div--detail-card"
+        >
+          <div class="col-12 col-md-6 position-relative">
             <img
+              class="img-video-foreground"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
               alt=""
             />
+            <video
+              class="video-play-mac"
+              autoplay=""
+              playsinline=""
+              muted=""
+              loop=""
+            >
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div class="col">
             <h1>Download your shows to watch offline.</h1>
@@ -98,7 +133,107 @@
               Save your favorites easily and always have something to watch.
             </h2>
           </div>
-        </div>
+        </section>
+
+        <section class="p-8">
+          <div id="questions" class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-one"
+                  >
+                    What is this service?
+                  </button>
+                </h2>
+                <div
+                  id="question-one"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body">
+                    Netflix is a streaming service that offers a wide variety of
+                    award-winning TV shows, movies, anime, documentaries, and
+                    more on thousands of internet-connected devices. You can
+                    watch as much as you want, whenever you want – all for one
+                    low monthly price. There's always something new to discover
+                    and new TV shows and movies are added every week!
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-two"
+                  >
+                    How much does it cost?
+                  </button>
+                </h2>
+                <div
+                  id="question-two"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop,
+                    or streaming device, all for one fixed monthly fee. Plans
+                    range from $22.99 to $6.99 a month. No extra costs, no
+                    contracts.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>Contact US: 010-1234-5678</p>
+          <div class="d-flex foorter-sitemap">
+            <div class="d-md-flex">
+              <ul class="col d-flex flex-column">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+              </ul>
+              <ul class="col d-flex flex-column">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+              </ul>
+            </div>
+
+            <div class="d-md-flex">
+              <ul class="col d-flex flex-column">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Netflix Shop</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>
+                  <a href="#">Do not Sell or Share My Personal Information</a>
+                </li>
+              </ul>
+              <ul class="col d-flex flex-column">
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+                <li><a href="#">Ad Choices</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 

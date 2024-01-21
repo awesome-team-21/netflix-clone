@@ -1,7 +1,24 @@
+:root {
+  --main-background-color: #000;
+  --main-gray-color: rgb(138 138 138);
+
+  --bs-accordion-bg: #000 !important;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: var(--main-background-color);
+}
+
+section,
+footer {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
 }
 
 #intro {
@@ -9,12 +26,37 @@ body {
   height: 80vh;
 }
 
+.accordion {
+  --bs-accordion-bg: #262323;
+  --bs-accordion-active-bg: var(--bs-accordion-bg);
+  /* --bs-accordion-btn-active-icon: black; */
+  --bs-accordion-active-color: red;
+
+  --bs-accordion-button-focus-border-color: white;
+  --bs-accordion-btn-color: ghostwhite;
+
+  /* --bs-accordion-btn-bg: pink;
+  --bs-accordion-active-bg: lightpink; */
+}
+
+.panel-default > .panel-heading {
+  background-color: #000;
+}
+
+.transparent-input-field {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .mask {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .container-fluid {
   width: 1170px;
+}
+
+.navbar-brand {
+  width: 9rem;
 }
 
 .navbar--login {
@@ -23,7 +65,50 @@ body {
 
 .div--detail-card {
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   background: #000;
   align-items: center;
+}
+.foreground-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.img-video-foreground {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.video-flow-example {
+  position: absolute;
+  width: 80%;
+  left: 15%;
+  top: 18%;
+  z-index: 1;
+}
+
+.video-play-mac {
+  position: absolute;
+  width: 60%;
+  left: 18%;
+  top: 10%;
+  z-index: 1;
+}
+
+.footer {
+  color: var(--main-gray-color);
+}
+
+li {
+  list-style: none;
+  margin: 0.3rem 0;
 }
