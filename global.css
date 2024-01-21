@@ -24,6 +24,8 @@ img {
 
 button {
   border: 0 !important;
+  height: 50px;
+  font-weight: 500;
 }
 
 .btn-primary {
