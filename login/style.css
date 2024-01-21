@@ -64,6 +64,22 @@
   font-size: 16px;
 }
 
+.login-input > label.input-not-focused {
+  color: #8c8c8c;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  left: 20px;
+  font-size: 16px;
+}
+
+.login-input > label.input-focused {
+  font-size: 11px;
+  top: 4px;
+  transform: translateY(0);
+}
+
 .login-username,
 .login-password {
   width: 100%;
