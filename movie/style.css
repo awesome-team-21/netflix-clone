@@ -91,7 +91,7 @@ body {
   left: 10px;
   bottom: -22px;
   font-size: 11px;
-  color: black;
+  color: #141414;
   padding-left: 175px;
   transition: transform 500ms;
   padding-top: 40px;
@@ -301,7 +301,7 @@ body {
   font-size: 15rem;
   line-height: 1;
   position: absolute;
-  left: -43px;
+  left: -60px;
   top: -27px;
 
   border: 0px solid transparent;
@@ -309,73 +309,63 @@ body {
 }
 
 .top-number-item img {
+  position: absolute;
+  left: -68px;
   margin: 4px 0 4px 60px;
   border-radius: 4px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .top-number-item-size {
   width: 8rem;
 }
 
-@media screen and (max-width: 38rem) {
+@media screen and (max-width: 28rem) {
   .top-number-item div {
-    font-size: 6rem;
-    top: 5px;
-    margin-left: 20px;
+    font-size: 9rem;
+    top: -10px;
+    margin-left: 10px;
+    position: absolute;
+    left: -80px;
+    top: -10px;
+  }
+
+  .top-number-item img {
+    margin-left: 50px;
   }
   .top-number-item-size {
-    margin-left: 50px;
-    width: 4rem;
+    margin-left: 47px;
+    width: 5rem;
+  }
+  .control-prev-again {
+    margin-left: 100px;
+    position: absolute;
+    bottom: -165px;
+  }
+
+  .control-next-again {
+    margin-left: -100px;
+    position: absolute;
+    top: -110px;
+    padding: 140px 50px;
+    /*border: 1px solid red;*/
+  }
+  .carousel-control-prev-icon {
+    padding: 70px 40px;
+    margin: 30px -30px;
+    margin-left: -120px;
+    position: absolute;
+    bottom: -160px;
+    background-color: black;
+    opacity: 0.4;
   }
 }
 
-}
-
-@media screen and (max-width: 50rem) {
-  .slider1 {
-    position: absolute;
-    top: 38rem;
-  }
-
-  .slider2 {
-    position: absolute;
-    top: 46rem;
-  }
-
-  .slider3 {
-    position: absolute;
-    top: 54rem;
-  }
-
-  .slider4 {
-    position: absolute;
-    top: 63rem;
-  }
-
-  .slider5 {
-    position: absolute;
-    top: 71rem;
-  }
-
-  .slider6 {
-    position: absolute;
-    top: 79rem;
-  }
-
-  .slider7 {
-    position: absolute;
-    top: 89rem;
-  }
-
-  .slider8 {
-    position: absolute;
-    top: 97rem;
-  }
-
-  .slider9 {
-    position: absolute;
-    top: 105rem;
+@media screen and (max-width: 28rem) {
+  .carousel-control-prev-icon3 {
+    padding: 70px 35px;
+    margin: 30px 20px;
+    margin-left: 60px;
   }
 }
 
