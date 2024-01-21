@@ -1,0 +1,348 @@
+:root {
+  --white-background: #f3f3f3;
+}
+
+#container {
+  background-color: #000;
+  color: #000000;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.logout-wrapper-background {
+  display: none;
+}
+
+.logo {
+  margin-left: 3%;
+  display: inline-block;
+  line-height: 90px;
+}
+
+.logo-svg {
+  height: 45px;
+  vertical-align: middle;
+  width: 167px;
+}
+
+.logout-body {
+  color: #333;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.logout-content {
+  background-color: var(--white-background);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 0 30px;
+  width: 100%;
+}
+
+.logout-content h1 {
+  color: black;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.logout-input {
+  max-width: 100%;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.logout-input > label {
+  color: #8c8c8c;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  left: 20px;
+  font-size: 16px;
+}
+
+.logout-username,
+.logout-password {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 50px;
+  padding: 16px 20px 0;
+}
+
+.logout-input input:focus + label {
+  font-size: 11px;
+  top: 4px;
+  transform: translateY(0);
+}
+
+.logout-button {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+}
+
+.logout-form-other {
+  display: flex;
+}
+
+.logout-remember-me {
+  flex-grow: 1;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  margin-bottom: -5px;
+}
+
+#remember-me {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+#remember-me + label {
+  line-height: 1.2;
+  position: relative;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#remember-me + label:before {
+  content: "";
+  display: block;
+  padding: 0;
+  position: absolute;
+  background-color: #737373;
+  border: 0;
+  border-radius: 2px;
+  height: 16px;
+  left: -20px;
+  width: 16px;
+}
+
+#remember-me:checked + label:after {
+  content: "\01F5F8";
+  color: #000;
+  font-size: 18px;
+  left: -21px;
+  top: 0;
+  position: absolute;
+}
+
+.logout-help-link {
+  cursor: pointer;
+  padding-top: 2px;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.logout-other {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.logout-signup-now a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.terms-of-use {
+  color: #8c8c8c;
+  font-size: 13px;
+  margin-top: 11px;
+}
+
+.terms-of-use a {
+  color: #0071eb;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+#terms-of-use-disclosure {
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+#terms-of-use-disclosure:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 0;
+  color: #757575;
+  font-size: 1em;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-divider {
+  border-color: #737373;
+  border-top: 1px solid #e5e5e5;
+  height: 0;
+  width: 100%;
+}
+
+.site-footer {
+  color: #737373;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-top {
+  color: #737373;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.footer-top-phone {
+  color: #737373;
+  text-decoration: none;
+}
+
+.footer-links {
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
+}
+
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link-item {
+  list-style: none;
+  margin-left: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 22px 0 0;
+  vertical-align: top;
+  width: 24%;
+}
+
+.footer-link {
+  color: #737373;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-link-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    background-color: var(--white-background);
+  }
+  .logout-header,
+  .footer {
+    background-color: var(--white-background);
+  }
+  .footer-link-item {
+    width: 32%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .footer-link-item {
+    width: 32%;
+  }
+
+  .logout-wrapper-background {
+    display: block;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .logout-body {
+    background-color: transparent;
+    margin: 0 auto -236px;
+    max-width: 450px;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .logout-body:before {
+    content: "";
+    display: block;
+    height: 91px;
+  }
+
+  .logout-body:after {
+    content: "";
+    display: block;
+    height: 236px;
+  }
+
+  .logout-content {
+    margin-bottom: 90px;
+    min-height: 625px;
+    padding: 60px 68px 40px;
+  }
+
+  .logout-form {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logout-header {
+    background-color: black;
+  }
+  .logout-wrapper-background {
+    background-color: var(--white-background);
+    background-image: none;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg");
+  }
+
+  .logout-header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, transparent);
+    border-bottom: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  .site-footer {
+    color: #757575;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
