@@ -5,6 +5,35 @@ body {
     open sans-serif;
 }
 
+
+
+.header {
+  background-image : url("https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg");
+  height: 36.5rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  /* margin-left: 1%; */
+  display: inline-block;
+  line-height: 5.6rem;
+}
+
+
+.logo-svg {
+  height: 45px;
+  vertical-align: middle;
+  width: 167px;
+}
+
+#navbar {
+  width: 100vw;
+  height: 5rem;
+  background-color: rgba(22, 20, 20, 0.8);
+}
+
 .slider1 {
   position: absolute;
   top: 38rem;
