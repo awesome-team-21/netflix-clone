@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+}
+
+.button-yeah {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  border: none;
+  opacity: 2;
+}
